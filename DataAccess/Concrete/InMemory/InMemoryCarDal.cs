@@ -50,6 +50,7 @@ namespace DataAccess.Concrete.InMemory
             Car carToDelete = _cars.FirstOrDefault(c => c.CarId == car.CarId);
             carToDelete.DailyPrice = car.DailyPrice;
             carToDelete.ModelYear  =car.ModelYear;
+            carToDelete.BrandId = car.BrandId;
         }
     }
 }
